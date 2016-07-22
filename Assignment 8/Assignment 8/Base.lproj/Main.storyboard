@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Jau-2I-C6h">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Desciption-->
+        <scene sceneID="48w-rv-zaF">
+            <objects>
+                <viewController id="Sk2-KK-xRi" customClass="beerDesciption" customModule="Assignment_8" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ubQ-yl-tN7"/>
+                        <viewControllerLayoutGuide type="bottom" id="6zz-oC-z5x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wqt-Zj-K8m">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zai-oj-Yge">
+                                <rect key="frame" x="20" y="94" width="348" height="186"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Desciption" id="Mrq-0U-tb6"/>
+                    <connections>
+                        <outlet property="descriptionView" destination="zai-oj-Yge" id="F9n-Kg-gcB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="by9-44-Nu9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831" y="-247"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Bd-Pc-vqR">
+            <objects>
+                <navigationController id="Jau-2I-C6h" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="npH-rb-tO0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="59f-jf-PAz" kind="relationship" relationship="rootViewController" id="Sd6-jw-d6L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4FQ-OE-VT2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-546" y="-247"/>
+        </scene>
+        <!--Beer-->
+        <scene sceneID="ZTX-h0-DNI">
+            <objects>
+                <viewController id="59f-jf-PAz" customClass="ViewController" customModule="Assignment_8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lav-VR-6Te"/>
+                        <viewControllerLayoutGuide type="bottom" id="mL9-Nb-nzQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="76n-uh-FTy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kfm-57-hnH">
+                                <rect key="frame" x="0.0" y="64" width="600" height="522"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="beer" id="I3Y-Ko-aFC" customClass="CustomTableViewCell" customModule="Assignment_8" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I3Y-Ko-aFC" id="iow-qK-CPo">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNi-0e-iTr">
+                                                    <rect key="frame" x="13" y="11" width="188" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="beerName" destination="yNi-0e-iTr" id="WaQ-Ai-xPR"/>
+                                            <segue destination="Sk2-KK-xRi" kind="show" id="VFI-rC-aCe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="59f-jf-PAz" id="bsA-9d-UBl"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mL9-Nb-nzQ" firstAttribute="top" secondItem="Kfm-57-hnH" secondAttribute="bottom" constant="14" id="29o-bR-26T"/>
+                            <constraint firstItem="Kfm-57-hnH" firstAttribute="top" secondItem="lav-VR-6Te" secondAttribute="bottom" id="8M7-rv-Ajg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kfm-57-hnH" secondAttribute="trailing" constant="-20" id="vdd-AQ-P0A"/>
+                            <constraint firstItem="Kfm-57-hnH" firstAttribute="leading" secondItem="76n-uh-FTy" secondAttribute="leadingMargin" constant="-20" id="wqu-EK-IzZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Beer" id="hOb-Jd-Omd"/>
+                    <connections>
+                        <outlet property="beerTableView" destination="Kfm-57-hnH" id="MEZ-lX-NUg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u3J-9c-Za6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152" y="-247"/>
+        </scene>
+    </scenes>
+</document>
